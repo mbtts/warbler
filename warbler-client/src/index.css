@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Pacifico');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #ececec;
+}
+
+a {
+    color: dodgerblue;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.65);
+    border-top: 5px solid dodgerblue;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.25em;
+    line-height: 1;
+    font-family: 'Pacifico', sans-serif;
+    color: dodgerblue;
+    font-weight: normal;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+nav li:last-child {
+    margin: 0;
+}
+
+nav li a {
+    display: block;
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    color: #777;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+nav li a:hover,
+nav li a.current {
+    background: #ececec;
+}
+
+nav li a.current {
+    color: #333;
+    border-color: #777;
+}
+
+form {
+    text-align: center;
+}
+
+form p {
+    margin-bottom: 1.2em;
+}
+
+form p.error {
+    background: red;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 0.4em;
+}
+
+form label {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 0.6em;
+    color: #777;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password] {
+    font-size: 1.2em;
+    padding: 0.4em;
+    border: 1px solid #ccc;
+    box-shadow: 1px 0px 5px 0px #ccc;
+    background-color: #e1e1e1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form input[type=text]:focus,
+form input[type=email]:focus,
+form input[type=password]:focus {
+    background-color: #fff;
+    outline-color: dodgerblue;
+}
+
+form input[type=submit] {
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: dodgerblue;
+    color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 1px 0px 5px 0px #ccc;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form input[type=submit]:focus,
+form input[type=submit]:active {
+    background-color: darkblue;
+}
+
+form input[type=submit]:disabled {
+    opacity: 0.6;
+}

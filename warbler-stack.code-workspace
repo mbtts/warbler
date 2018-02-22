@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "warbler-server"
+		},
+		{
+			"path": "warbler-client"
+		}
+	]
+}
